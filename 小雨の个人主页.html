@@ -1,0 +1,421 @@
+﻿<html lang="zh-CN">
+<head> 
+    <meta charset="utf-8">
+
+  <meta name="viewport" content="initial-scale=0.9, maximum-scale=1.0, minimum-scale=0.9, user-scalable=0, width=device-width">
+    
+
+    <meta itemprop="name" content="小雨の个人主页">
+
+ 
+<meta itemprop="image" content="icon/icon.png" />
+<meta name="description" itemprop="description" content="我只是呆呆地等一场雪，心生欢喜" />
+ 
+
+   
+	<meta name="keywords" content="小雨の个人主页">
+	
+	<meta name="description" content=""所谓的奇迹，要真的发生才有价值。"">
+    <title>
+小雨の个人主页      
+    </title>
+ 
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="#">
+
+    <meta property="og:image" content="icon/icon.png">
+
+    <meta property="og:title" content="小雨の个人主页">
+
+    <meta property="og:description" content="小雨の个人主页">
+
+    <link rel="canonical" href="#">
+
+    <link rel="shortcut icon" href="icon/icon.png">
+
+    <link rel="bookmark" href="icon/icon.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/icon.png">
+	
+    <link rel="stylesheet" type="text/css" href="dark.css" id="css">
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css">
+    <script src="script.js" type="text/javascript"></script>
+    <script src="dark.js"  type="text/javascript"></script>
+    
+    
+    
+    
+    
+    
+    
+ <!-----------------------------------------测试-------------------------------------------------->
+ 
+
+
+
+<script>
+	jQuery(document).ready(function() {
+	var QRBox	=	$('#QRBox');
+	var MainBox	=	$('#MainBox');
+	var AliPayQR	=	""; //支付宝二维码
+	var WeChanQR	=	""; //微信二维码
+	var QQQR     	=	"https://s1.328888.xyz/2022/08/29/C7yFo.jpg"; //QQ二维码
+
+	
+
+	function showQR(QR) {
+		if (QR) {
+			MainBox.css('background-image','url(' + QR + ')');
+		}
+		$('#DonateText,#donateBox,#github').addClass('blur');
+		QRBox.fadeIn(300,function(argument) {
+			MainBox.addClass('showQR');
+		});
+	}
+
+	$('#donateBox>li').click(function(event) {
+		var thisID	=	$(this).attr('id');
+	if (thisID === 'AliPay') {
+			showQR(AliPayQR);
+		} else if (thisID === 'WeChat') {
+			showQR(WeChanQR);
+		} else if (thisID === 'QQ') {
+			showQR(QQQR);
+		
+		}
+	});
+
+	MainBox.click(function(event) {
+		MainBox.removeClass('showQR').addClass('hideQR');
+		setTimeout (function(a) {
+			QRBox.fadeOut(300,function(argument) {
+				MainBox.removeClass('hideQR');
+			});
+			$('#DonateText,#donateBox,#github').removeClass('blur');
+		},600);
+
+	});
+});
+</script>
+
+   <style>
+        .zuobiao i {
+            line-height: 1.8;
+            margin-right: 6px;
+            vertical-align: middle;
+            background-image: url(images/zuobiao.svg);
+            background-size: 100%;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            margin-top: -2px;
+        }
+       
+    </style>
+    <style>
+     .user-warp img {
+            width:70px;
+            border-radius:30%;
+           }
+	    
+/*.dark-theme .user-warp img {
+            width:70px;
+            border-radius:100%;
+            animation: light 5s ease-in-out infinite;
+            transition: 0.5s;}*/
+
+
+	
+	    @keyframes light {
+ 0%{box-shadow: 0 0 4px #f00;}
+ 25%{box-shadow: 0 0 5px #0f0;} 
+ 50%{box-shadow: 0 0 4px #00f;}
+ 75%{box-shadow: 0 0 5px #0f0;} 
+ 100%{box-shadow: 0 0 4px #f00;}
+}
+      </style>
+
+</head>
+
+<body>
+	 
+<div class="wrapper">
+<header>
+    <nav class="navbar" id="mobile-toggle-theme">
+        <div class="container"></div>
+    </nav>
+
+    <!------------------------------------------------------------------------------------------->
+    
+     
+</header> 
+
+    <div class="main">
+
+        <div class="container">
+            <div class="intro" style=" line-height: 50px">
+                <div class="user-warp img"><a href="#" target="_blank"><img src="icon/icon.png" alt="小雨の个人主页"></a></div>
+                <div class="nickname">小雨</div>
+                <div class="description">
+                    <p>“所谓的奇迹，要真的发生才有价值。”</p>
+
+                </div>
+
+
+                <div class="zuobiao">
+                    <i class="ico_map"></i>中国 · 广东
+                    <span style="margin-left: 30px">
+                            <input id="switch_default" type="checkbox" class="switch_default">
+                            <label for="switch_default" class="toggleBtn"></label></span>
+                </div>
+
+
+                
+                <div class="menu navbar-right links">
+
+                    <!-- 获取页面列表 -->
+
+                    <a class="menu-item" href="#" target="_blank">
+                    主页</a> · 
+
+                    
+		    <a class="menu-item" href="https://wpa.qq.com/wpa_jump_page?v=3&uin=2103822751&site=qq&menu=yes" target="_blank">
+                    QQ</a> ·
+
+			
+	            <a class="menu-item" href="https://jq.qq.com/?_wv=1027&k=zJjLjTnE" target="_blank">
+                    Q群</a> ·
+			
+			
+                    <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2103822751@qq.com" target="_blank">
+                    邮箱</a>
+<center>
+
+<div id="header">
+</div>
+<div id="main">
+	<div class="demo">
+		
+		
+		
+        <div id="player3" class="aplayer">
+            <pre class="aplayer-lrc-content">
+
+[00:02.77]安苏羽 - 缺氧
+[00:04.79]作词：安苏羽
+[00:06.41]作曲：安苏羽
+[00:08.64]编曲：安苏羽
+[00:20.23]我喜欢你生气的模样
+[00:22.76]我喜欢你小小的倔强
+[00:25.24]我喜欢你如果没有了你
+[00:28.55]就像缺氧
+[00:30.47]还记得在凌晨的大街
+[00:32.95]天空突然下起了小雨
+[00:35.42]我轻轻将你拥入怀里
+[00:40.18]风筝终会有坠落那天
+[00:42.76]可是我们不需要终点
+[00:45.24]兜兜转转
+[00:46.30]你始终会停在我世界里面
+[00:50.57]我记得每个思念的黑夜
+[00:52.74]我记得每次分别的情景
+[00:55.22]我记得所有关于你
+[00:58.89]就是这样爱你
+[01:01.41]请别有所怀疑
+[01:03.98]我愿把一整颗心都交给你
+[01:08.91]就是这样爱你
+[01:11.14]记忆无所遁形
+[01:13.92]每分每秒都会想起你
+[01:18.68]我想和你一起奔跑
+[01:22.02]在爱的路上
+[01:24.75]这暧昧的味道
+[01:28.70]我想和你一起分享
+[01:32.09]如清晨花香
+[01:34.73]这爱情的味道
+[02:00.48]我喜欢你生气的模样
+[02:02.86]我喜欢你小小的倔强
+[02:05.24]我喜欢你如果没有了你
+[02:08.27]就像缺氧
+[02:10.44]还记得在凌晨的大街
+[02:12.72]天空突然下起了小雨
+[02:15.35]我轻轻将你拥入怀里
+[02:20.20]风筝终会有坠落那天
+[02:22.78]可是我们不需要终点
+[02:25.21]兜兜转转
+[02:26.22]你始终会停在我世界里面
+[02:30.62]我记得每个思念的黑夜
+[02:32.74]我记得每次分别的情景
+[02:35.33]我记得所有关于你
+[02:38.64]就是这样爱你
+[02:41.02]请别有所怀疑
+[02:43.66]我愿把一整颗心都交给你
+[02:48.62]就是这样爱你
+[02:51.04]记忆无所遁形
+[02:53.53]每分每秒都会想起你
+[02:58.33]我想和你一起奔跑
+[03:02.07]在爱的路上
+[03:04.61]这暧昧的味道
+[03:08.81]我想和你一起分享
+[03:12.10]如清晨花香
+[03:14.73]这爱情的味道
+[03:20.39]风筝终会有坠落那天
+[03:22.72]可是我们不需要终点
+[03:25.20]兜兜转转
+[03:26.26]你始终会停在我世界里面
+[03:30.25]我记得每个思念的黑夜
+[03:32.73]我记得每次分别的情景
+[03:35.06]我记得所有关于你
+[03:38.81]就是这样爱你
+[03:40.98]请别有所怀疑
+[03:43.66]我愿把一整颗心都交给你
+[03:48.61]就是这样爱你
+[03:51.04]记忆无所遁形
+[03:53.77]每分每秒都会想起你
+[03:58.68]我想和你一起奔跑
+[04:02.23]在爱的路上
+[04:04.55]这暧昧的味道
+[04:08.81]我想和你一起分享
+[04:12.20]如清晨花香
+[04:14.68]这爱情的味道
+
+
+
+ 
+            </pre>
+        </div>
+	</div>
+</div>
+<script>
+	var ap3 = new APlayer({
+		element: document.getElementById('player3'),//样式1
+		narrow: false,
+		autoplay: false,
+		showlrc: true,
+		music: {
+            title: '缺氧',
+			author: '',
+			url: 'https://webfs.ali.kugou.com/202210151734/45af02cce698a862cfdf143049bc8b83/part/0/960113/KGTX/CLTX001/clip_372122b81eedcf670a63f427d1f8f0e3.mp3',
+			pic: 'https://p1.music.126.net/vmCcDvD1H04e9gm97xsCqg==/109951163350929740.jpg?param=300x300'
+        }
+	});
+	ap3.init();
+</script>
+
+	</center>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ 
+ 
+ 
+ 
+ 
+    <!------------------------------------------------------------------------------------------->
+    
+   
+
+
+
+
+
+	<!------------------------------------------------------------------------------------------->
+                </div><br>
+	           <div style=" line-height: 20px;font-size: 9pt;">
+                    <p>"出言有尺，嬉闹有度，做事有余，说话有德。"</p>
+                        <p style="margin-left: 8rem;font-size: 8pt;"><small>—— 小雨</small></p>
+			
+			
+                </div>
+                
+        <br>
+                 <center>
+	<ul id="donateBox" class="list pos-f tr3">
+		<li id="AliPay">AliPay</li>
+		<li id="WeChat">WeChat</li>
+		<li id="QQ">QQ</li>
+		
+	</ul>
+	<div id="QRBox" class="pos-f left-100">
+		<div id="MainBox"></div>
+	</div>
+</center>
+
+            </div>
+            
+            
+        </div>
+
+</div>
+
+<footer id="footer" class="footer">
+         	
+		 <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+    
+    	<!------------------------------------------------------------------------------------------->
+		
+	
+	
+</footer>
+
+</div>
+
+
+</html>
